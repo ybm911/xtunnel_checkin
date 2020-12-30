@@ -4,11 +4,12 @@
 
 ## Ready
 
+需要 Python 模块
+
 ```
-需要 Python 模块：
 requests
 ast
-yaml
+PyYaml
 alive_progress
 colorama
 ```
