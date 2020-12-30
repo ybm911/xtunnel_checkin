@@ -2,8 +2,6 @@ import requests, ast, yaml
 from alive_progress import alive_bar
 from colorama import Fore, Back, Style
 
-logging.getLogger().setLevel(logging.INFO)
-
 with open('config.yaml', 'r') as config:
     information = yaml.load(config.read(), Loader=yaml.FullLoader)
     email = information['email']
