@@ -1,8 +1,14 @@
-import requests, ast, yaml
+import requests, ast, yaml, sys
 from alive_progress import alive_bar
 from colorama import Fore, Back, Style
 
-with open('config.yaml', 'r') as config:
+if sys.argv[1] == "-c":
+    pass
+else:
+    sys.exit()
+config_file = sys.argv[2]
+
+with open(config_file, 'r') as config:
     information = yaml.load(config.read(), Loader=yaml.FullLoader)
     email = information['email']
     password = information['password']

@@ -1,0 +1,4 @@
+requests
+PyYaml
+alive_progress
+colorama
